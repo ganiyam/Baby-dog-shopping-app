@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  뷰페이저간의 양 옆 여백을 상쇄할 값   -->
+    <dimen name="offsetBetweenPages">40dp</dimen>
+    <dimen name="offsetBetweenPages2">70dp</dimen>
+    <!--  각 페이지의 양 옆 margin  -->
+    <dimen name="pageMargin">50dp</dimen>
+</resources>

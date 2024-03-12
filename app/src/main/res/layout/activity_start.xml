@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StartActivity"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backcolor">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/startdog"
+        android:scaleType="fitXY"
+        />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="107dp"
+            android:layout_marginEnd="104dp"
+            android:layout_marginBottom="100dp"
+            android:fontFamily="@font/suitelight"
+            android:gravity="center"
+            android:text="우리 강아지 맞춤 커뮤니티 쇼핑앱"
+            android:textSize="28sp" />
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Baby Dog"
+        android:textColor="@color/clickpink"
+        android:textStyle="bold"
+        android:textSize="45sp"
+        android:gravity="center"
+        android:fontFamily="@font/suitebold"/>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lotti"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="450dp"
+            android:layout_marginLeft="130dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/lotti3"
+            app:lottie_repeatCount="2" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

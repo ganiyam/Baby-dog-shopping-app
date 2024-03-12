@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/lightgray">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/clickpink"
+            android:fontFamily="@font/suitebold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:gravity="center"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/mainviewpager2"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:layout_constraintTop_toBottomOf="@+id/text_category" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/cate_re"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_gravity="center"
+            android:background="@color/white"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="인기 브랜드 베스트"
+            android:background="@color/white"
+            android:fontFamily="@font/suitebold"
+            android:textSize="23sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/cate_brand_re"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@color/white"
+            android:paddingLeft="10dp"/>
+
+        <LinearLayout
+            android:paddingTop="30dp"
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:layout_marginBottom="?android:attr/actionBarSize">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textColor="@color/black"
+                android:text="우리멈머도🐶💖기분내야지"
+                android:textSize="23sp"
+                android:fontFamily="@font/suitebold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColor="@color/black"
+                android:text="크리스마스 간식 준비🍷🎄"
+                android:textSize="23sp"
+                android:fontFamily="@font/suitebold"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/cate_chris_re"
+                android:layout_width="match_parent"
+                android:layout_height="270dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView >

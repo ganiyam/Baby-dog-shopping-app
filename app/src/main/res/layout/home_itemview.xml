@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="350dp"
+        app:cardCornerRadius="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:elevation="5dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/home_poster"
+                android:layout_width="300dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/dog1"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/home_mini"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@android:color/transparent"
+                app:civ_border_overlay="false"
+                app:civ_border_width="0dp"
+                android:src="@drawable/dog1"
+                />
+
+            <TextView
+                android:id="@+id/home_names"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ddddddddd"
+                android:textColor="@color/black"
+                android:fontFamily="@font/suitebold"
+                android:textSize="15sp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/white"
+                android:layout_marginTop="5dp"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/home_contents"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="내용내용내용"
+                android:fontFamily="@font/suitebold"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="20dp"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

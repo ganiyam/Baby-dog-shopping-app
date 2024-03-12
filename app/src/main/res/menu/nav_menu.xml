@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/baseline_pets_24"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/navigation_category"
+        android:icon="@drawable/outline_dashboard_24"
+        android:title="Category" />
+
+    <item
+        android:id="@+id/navigation_brand"
+        android:icon="@drawable/outline_favorite_border_24"
+        android:title="Brand" />
+
+    <item
+        android:id="@+id/navigation_mypage"
+        android:icon="@drawable/baseline_perm_identity_24"
+        android:title="Mypage"/>
+</menu>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="210dp"
+    android:layout_height="270dp"
+    android:layout_marginLeft="7dp">
+
+    <ImageView
+        android:id="@+id/cate_chris_img"
+        android:layout_width="210dp"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/cate_chris_brandname"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:textSize="13sp"
+        android:fontFamily="@font/suitelight"
+        android:textColor="@color/gray"
+        app:layout_constraintTop_toBottomOf="@+id/cate_chris_img" />
+
+    <TextView
+        android:id="@+id/cate_chris_content"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:textSize="15sp"
+        android:fontFamily="@font/suitelight"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/cate_chris_brandname"/>
+
+    <TextView
+        android:id="@+id/cate_chris_price"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:fontFamily="@font/suitebold"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@+id/cate_chris_content" />
+</androidx.constraintlayout.widget.ConstraintLayout>

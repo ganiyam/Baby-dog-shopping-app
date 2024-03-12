@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fre2_pager"
+    android:layout_width="260dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/fre2_image"
+            android:layout_width="260dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            app:tint="@color/image"
+            android:tintMode="src_atop"
+            android:scaleType="fitXY"/>
+     <TextView
+        android:id="@+id/fre2_text"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:fontFamily="@font/suitebold"
+         android:textColor="@color/white"
+         android:layout_marginBottom="30dp"
+         android:layout_marginLeft="90dp"
+        android:layout_gravity="bottom"/>
+</FrameLayout>

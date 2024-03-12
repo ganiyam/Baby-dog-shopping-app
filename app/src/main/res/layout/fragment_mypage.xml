@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <TextView
+                android:id="@+id/text_mypage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="@color/clickpink"
+                android:gravity="center"
+                android:fontFamily="@font/suitebold"
+                android:layout_marginTop="5dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="400dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="30dp"
+            app:cardBackgroundColor="@color/pink"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="30dp"
+            android:layout_gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="프로필"
+            android:textSize="20sp"
+            android:fontFamily="@font/suitebold"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/suitebold"
+            android:textSize="30sp"
+            android:text="소중한 강아지 말티푸 '먼지',"
+            android:textColor="@color/black"
+            android:layout_marginLeft="30dp"/>
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/petpro1"
+            android:layout_gravity="center"
+        />
+
+
+            <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="만1세/퍼피/여아/소형"
+            android:fontFamily="@font/suitebold"
+            android:textSize="17sp"
+            android:gravity="center"/>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="나의 쇼핑"
+            android:textSize="20sp"
+            android:fontFamily="@font/suitebold"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"/>
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:weightSum="4">
+
+                <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/outline_delivery_dining_24"/>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/outline_library_books_24"/>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/outline_monetization_on_24"/>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/outline_shopping_cart_24"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@color/backcolor"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="말티푸는 이런 아이에요."
+                android:textSize="20sp"
+                android:fontFamily="@font/suitebold"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"/>
+
+            <TextView
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="15dp"
+                android:text="말티푸는 선천적으로 슬개골탈구, 망막위축증, 간문맥단락에 걸릴 위험이 높은 종이에요."
+                android:fontFamily="@font/suitelight"
+                android:layout_marginBottom="20dp"
+                />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:nestedScrollingEnabled="false"
+                android:id="@+id/mypage_item"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical"
+                android:gravity="center"
+
+                android:layout_marginBottom="?android:attr/actionBarSize"/>
+
+        </LinearLayout>
+</androidx.core.widget.NestedScrollView>
